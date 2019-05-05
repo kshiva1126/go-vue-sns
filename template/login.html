@@ -1,0 +1,18 @@
+{{define "login"}}
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+</head>
+<body>
+<form action="/login" method="post">
+    <p>メールアドレス</p>
+    <p><input type="text" name="email" value="{{.Email}}"></p>
+    <p>パスワード</p>
+    <p><input type="password" name="password" value="{{.Password}}"></p>
+    <p><input type="submit" value="ログイン"></p>
+</form>
+</body>
+</html>
+{{end}}

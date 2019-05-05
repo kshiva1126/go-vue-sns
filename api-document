@@ -1,0 +1,35 @@
+GET/messages
+{
+    "messages": [
+        {
+            "id": 1,
+            "body": "Hello World",
+            "created_at": "2019-04-27T15:00:00.000Z"
+        }
+    ], [
+        {
+            id": 2,
+            "body": "Hello World",
+            "created_at": "2019-04-27T16:00:00.000Z"
+        }
+    ]
+}
+
+GET/messages/{message_id}/comments
+{
+    "comments": [
+        {
+            "id": 10,
+            "message_id": 1,
+            "body": "Jaljayo World",
+            "created_at": "2019-04-27T15:00:00.000Z"
+        }
+    ], [
+        {
+            "id": 11,
+            "message_id": 2,
+            "body": "Jaljayo World",
+            "created_at": "2019-04-27T15:00:00.000Z"
+        }
+    ]
+}

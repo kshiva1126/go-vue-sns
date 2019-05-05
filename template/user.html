@@ -1,0 +1,22 @@
+{{define "user"}}
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー</title>
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+</head>
+<body>
+    <div id="top">
+        <h1>ユーザー</h1>
+        <ul>
+            <a href="/message/">
+                <li v-for="message" in messages">
+                </li>
+            </a>
+        </ul>
+    </div>
+</body>
+</html>
+{{end}}

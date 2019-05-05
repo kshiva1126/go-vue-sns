@@ -1,0 +1,16 @@
+{{define "message"}}
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>メッセージ</title>
+</head>
+<body>
+<form action="/message" method="post">
+    <p>メッセージ</p>
+    <p><input type="text" name="body" value="{{.Body}}"></p>
+    <p><input type="submit" value="送信"></p>
+</form>
+</body>
+</html>
+{{end}}
